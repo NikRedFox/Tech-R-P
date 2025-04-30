@@ -91,3 +91,29 @@ header img{
 
 
 /* Main */
+
+.gif{
+    position: relative;
+    width: 400px;    
+    height: 300px;
+    /* overflow: hidden; */
+
+}
+
+.gif .frame{
+    position: absolute;
+    top: -135%; left: 10%;
+    width: 461px;
+    height: 349px;
+    object-fit: cover;
+    animation: flicker 0.2s steps(1) infinite;
+}
+
+.gif .f2{
+    animation-delay: 0.1s;  
+}
+
+@keyframes flicker {
+    0%, 49%   { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
