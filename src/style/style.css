@@ -86,11 +86,22 @@ header img{
 .main-text-box p{
     font-size: var(--header-links);
 }
-
-
-
-
 /* Main */
+
+
+/*Passos Aluguel*/
+.passos-aluguel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.passos-container{
+    display: flex;
+    gap: 195px;
+}
+/*Passos Aluguel*/
 
 .gif{
     position: relative;
