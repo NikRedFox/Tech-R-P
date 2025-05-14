@@ -99,7 +99,55 @@ header img{
 
 .passos-container{
     display: flex;
+    margin-top: 75px;
     gap: 195px;
+}
+
+.chip-left{
+  position: relative;
+}
+
+.chip-left > img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.left-text {
+  position: absolute;
+  top: 100px;    
+  left: 60px;   
+  z-index: 2;   
+  color: #ffffff;  
+}
+
+.left-text h1{    
+    font-size: var(--headline2-normal);
+    width: 404px;
+    margin-bottom: 20px;
+}
+
+.left-text h2{    
+    font-size: var(--paragraph-normal);
+}
+
+.left-text p{
+    margin-bottom: 60px;
+    width: 404px;
+    font-size: var(--paragraph-normal);
+}
+
+.left-text a{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: var(--color-neutral-white);
+    cursor: pointer;
+    font-size: var(--paragraph-normal);
+    z-index: 1001;
+}
+
+.chip-right{
+    margin-top: 339px;
 }
 /*Passos Aluguel*/
 
@@ -107,8 +155,7 @@ header img{
     position: relative;
     width: 400px;    
     height: 300px;
-    /* overflow: hidden; */
-
+    z-index: 1000;
 }
 
 .gif .frame{
@@ -127,4 +174,26 @@ header img{
 @keyframes flicker {
     0%, 49%   { opacity: 1; }
     50%, 100% { opacity: 0; }
+}
+
+/* --------------------------------------- */
+
+.gif-big{
+    position: relative;
+    width: 400px;    
+    height: 300px;
+    z-index: 1000;
+}
+
+.gif-big .frame{
+    position: absolute;
+    top: -238%; left: 12.5%;
+    width: 441px;
+    height: 637px;
+    object-fit: cover;
+    animation: flicker 0.2s steps(1) infinite;
+}
+
+.gif-big .f2{
+    animation-delay: 0.1s;  
 }
