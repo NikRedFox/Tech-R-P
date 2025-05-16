@@ -1,0 +1,57 @@
+@import url(../../../../style/global.css);
+
+body{
+    margin: 0 auto;
+    background-color: var(--color-background);
+}
+
+/* Header */
+header{
+    display: flex;
+    background-color: var(--color-neutral-black);
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 10%;
+}
+
+
+.header-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-items a{
+    text-decoration:  none;
+    color: var(--color-neutral-white);
+    font-size: var(--header-links);
+}
+
+.links-contato-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  
+}
+.links-contato-login a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    color: var(--color-primary-blue);
+    font-size: var(   --header-links);
+}
+.link-contato img{
+    width: 25px;
+    height: 25px;
+}
+.link-login img{
+    width: 25px;
+    height: 25px;
+}
