@@ -55,3 +55,56 @@ header img{
     width: 25px;
     height: 25px;
 }
+
+/* FIM DO HEADER */
+
+/*  COMEÇO DO MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    gap: 72px;
+}
+
+.placa-titulo{
+    background-image: url(../../assets/images/placa-menor\ \(2\).svg);
+    width: 1258px;
+    height: 172px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.placa-titulo h1{
+    padding: 58px 114px;
+    font-size:var(  --headline1-medium);
+    color: var( --color-neutral-white);
+    
+}
+.placa-maior{
+    background-image:url(../../assets/images/tela-display.svg);
+    width: 1315px;
+    height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+
+  
+}
+.placa-maior p{
+    color: var(--color-neutral-white);
+    font-size: 40px;
+    width: 987px;
+}
+/* FIM DO MAIN */
