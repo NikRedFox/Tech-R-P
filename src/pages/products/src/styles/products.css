@@ -60,7 +60,31 @@ header img{
 
 /*  COMEÇO DO MAIN */
 
-main{
+.img-main{
+    width: 100%;
+    position: relative;
+}
+main h1{
+    width: 990px;
+    color: var(--color-neutral-white);
+    position: absolute;
+    top: 50%;
+    right:500px;
+    font-size: var(--headline1-big);
+
+}
+
+
+
+/* FIM DO MAIN */
+
+
+
+
+
+/* SECTION ALUGUE-NOTEBOOKS */
+
+.alugue-notebooks{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +93,7 @@ main{
 }
 
 .placa-titulo{
-    background-image: url(../../assets/images/placa-menor\ \(2\).svg);
+    background-image: url(../assets/images/placa-menor\ \(2\).svg);
     width: 1258px;
     height: 172px;
     background-repeat: no-repeat;
@@ -88,7 +112,7 @@ main{
     
 }
 .placa-maior{
-    background-image:url(../../assets/images/tela-display.svg);
+    background-image:url(../assets/images/tela-display.svg);
     width: 1315px;
     height: 662px;
     background-repeat: no-repeat;
@@ -107,4 +131,67 @@ main{
     font-size: 40px;
     width: 987px;
 }
-/* FIM DO MAIN */
+/* FIM DA SECTION ALUGUE NOTEBOOKS */
+
+/*  COMEÇO DA SECTION NOSSAS VANTAGENS */
+.nossas-vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 196px;
+    gap: 243px;
+}
+
+.placa-nossas_vantagens{
+    background-image: url(../assets/images/placa-menor\ \(2\).svg);
+    width: 941px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+
+}
+.placa-nossas_vantagens h2{
+    color: var( --color-neutral-white);
+    font-size: var(  --headline2-big);
+}
+.display-tela-vantagens{
+    background-image:url(../assets/images/tela-display.svg);
+    width: 1315px;
+    height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+
+}
+.display-tela-vantagens p{
+    font-size:var( --paragraph-normal);
+    color: var(--color-neutral-white);
+    width: 900px;
+    font-size: var( --headline2-medium);
+
+}
+
+/* FIM DA SECTION NOSSAS VANTAGENS */
+
+
+/* COMEÇO SECTION NOSSOS PRODUTOS */
+.nossos-produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 243px;
+}
+
+
+/*  FIM DA SECTION NOSSAS VANTAGENS */
