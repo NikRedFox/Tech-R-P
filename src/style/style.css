@@ -103,6 +103,19 @@ header img{
     gap: 195px;
 }
 
+.chip-logo{
+    position: relative;
+}
+
+.chip-logo p{
+    position: absolute;
+    top: 40px;
+    left: 52px;
+    font-size: var(--headline1-medium);
+    font-weight: var(--headline1-weight);
+    color: var(--color-dark-blue);
+}
+
 .chip-left{
   position: relative;
 }
@@ -149,8 +162,35 @@ header img{
 .chip-right{
     margin-top: 339px;
 }
-/*Passos Aluguel*/
 
+.right-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1550px;
+    left: 1200px;
+    gap: 50px;
+}
+
+.right-text h2{    
+    font-size: var(--headline2-medium);
+    width: 410px;
+    color: var(--color-neutral-white);
+}
+
+.right-text a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-neutral-white);
+    cursor: pointer;
+    font-size: var(--headline2-medium);
+    font-weight: var(--headline1-weight);
+    z-index: 999;
+}
+
+/*Passos Aluguel*/
+/* --------------------------------------- */
 .gif{
     position: relative;
     width: 400px;    
@@ -176,8 +216,6 @@ header img{
     50%, 100% { opacity: 0; }
 }
 
-/* --------------------------------------- */
-
 .gif-big{
     position: relative;
     width: 400px;    
@@ -197,3 +235,9 @@ header img{
 .gif-big .f2{
     animation-delay: 0.1s;  
 }
+/* --------------------------------------- */
+
+/*Destaque*/
+
+
+/*Destaque*/
