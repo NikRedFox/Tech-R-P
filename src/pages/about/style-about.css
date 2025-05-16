@@ -1,0 +1,175 @@
+@import url(./src/style/global.css);
+
+body{
+    background-color: var(--color-background);
+    font-family: var(--font);
+}
+
+/* header */
+header{
+    display: flex;
+    background-color: var(--color-neutral-black);
+    justify-content: space-around;
+}
+
+header img{
+    width: 10%;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-items a{
+    text-decoration:  none;
+    color: var(--color-neutral-white);
+}
+
+.button-container a{
+    text-decoration: none;
+    color: var(--color-primary-blue);
+}
+
+/* cover */
+.cover {
+    background-image: url('./src/assets/images/cover.png');
+    height: 421px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: 831px;
+    height: 234px;
+    text-align: center;
+    font-size: var(--headline1-big);
+    font-weight: var(--headline1-weight);
+    color: var(--color-neutral-white);
+}
+
+/* container inscreva-se */
+.subscribe-container {
+    background-image: url(./src/assets/images/caixa-inscrevase.png);
+    width: 1332px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 108px;
+}
+
+/* conteúdo do container inscreva-se */
+.subscribe-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.subscribe-container h2 {
+    width: 525px;
+    height: 103px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: var(--headline2-weight);
+    color: var(--color-neutral-white);   
+}
+
+.subscribe-container p {
+    width: 727px;
+    height: 53px;
+    text-align: center;
+    letter-spacing: 3px;
+    opacity: 69%;
+    font-size: 20px;
+    font-weight: var(--paragraph-normal);
+    color: var(--color-neutral-white);
+}
+
+/* botões do container inscreva-se */
+
+.subscribe-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.solucoes {
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    background-color: #003A41;
+    color: var(--color-neutral-white);
+    font-size: 15px;
+    font-weight: var(--button-text-small);
+}
+
+.contato {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: var(--button-text-small);
+    color: var(--color-neutral-white);
+}
+
+/* container por que */
+.why-container {
+    background-image: url('./src/assets/images/caixa-porque.png');
+    width: 1126px;
+    height: 562px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-top: 103px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+}
+
+.line {
+    width: 318px;
+    height: 1px;
+    background-color: var(--color-neutral-white);
+}
+
+.why-container h2 {
+    font-size: 48px;
+    font-weight: 200;
+    color: var(--color-neutral-white);
+}
+
+.why-container p {
+    width: 904px;
+    height: 54px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: var(--paragraph-normal);
+    color: var(--color-neutral-white);
+}
+
+
+
+
+
+
