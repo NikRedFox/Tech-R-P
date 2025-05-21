@@ -290,10 +290,6 @@ header img{
 }
 
 /* --------------------------------------- */
-@keyframes flicker {
-    0%, 49%   { opacity: 1; }
-    50%, 100% { opacity: 0; }
-}
 
 .gif-destaque{
     position: absolute;
@@ -316,3 +312,84 @@ header img{
 /* --------------------------------------- */
 
 /*Destaque*/
+
+/*Incluso*/
+.incluso-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 266px;
+    
+}
+
+.incluso-chip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.incluso-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    position: absolute;
+    top: 18%;
+}
+
+.incluso-card-container h2{
+    font-size: var(--headline2-big);
+    color: var(--color-neutral-white);
+}
+
+.incluso-card-text{
+    display: flex;
+    gap: 26px;
+}
+
+.incluso-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 61px;
+    width: 220px;
+    height: 194px;
+    background-color: transparent;
+    border: 3px solid var(--color-neutral-white);
+    border-radius: 16px;
+    gap: 30px;
+}
+
+.incluso-card img{
+    width: 90%;
+}
+
+.incluso-card p{
+    color: var(--color-neutral-white);
+    font-size: var(--headline2-normal);
+
+}
+
+/* --------------------------------------- */
+.gif-incluso{
+    position: absolute;
+    width: 1138px;    
+    height: 482px;
+    z-index: 1000;
+}
+
+.gif-incluso .frame{
+    position: absolute;
+    top: 13.5%; left: 0%;
+    width: 1138px;    
+    height: 482px;
+    object-fit: cover;
+    animation: flicker 0.2s steps(1) infinite;
+}
+
+.gif-incluso .f2{
+    animation-delay: 0.1s;  
+}
+/* --------------------------------------- */
+/*Incluso*/
