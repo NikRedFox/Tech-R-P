@@ -245,7 +245,35 @@ header img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+}
+
+.chip-container{
     position: relative;
+}
+
+.destaque-container > img:first-child{
+    position: relative;
+    z-index: 1;
+}
+
+.destaque-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+}
+
+.destaque-card-container h2{
+    color: var(--color-neutral-white);
+}
+
+.card-text-container{
+    display: flex;
+    gap: 40px;
 }
 
 .destaque-card{
@@ -253,8 +281,12 @@ header img{
     flex-direction: column;
     gap: 10px;
     padding: 14px 11px;
-    background-color: aqua;
+    background-color: var(--color-neutral-gray);
     border-radius: 16px;
+}
+
+.destaque-card p{
+    color: var(--color-neutral-white);    
 }
 
 /* --------------------------------------- */
@@ -266,13 +298,12 @@ header img{
 .gif-destaque{
     position: absolute;
     z-index: 1000;
-    top: 10.8%;
-    left: 20.9%;
+    top: 10.5%;
+    left: 5.3%;
 }
 
 .gif-destaque .frame{
-    position: absolute;
-    
+    position: absolute;    
     width: 1182px;
     height: 377px;
     object-fit: cover;
