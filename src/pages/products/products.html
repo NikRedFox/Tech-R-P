@@ -34,7 +34,7 @@
     <!-- COMEÇO DA MAIN -->
 
     <main>
-        <img class="img-main" src="./src/assets/images/img-main-products.png" alt="imagem que tem alguém mexendo em um notebook" title="imagem que tem alguém mexendo em um notebook">
+        <img class="img-main" src="./src/assets/images/image 66.png" alt="imagem que tem alguém mexendo em um notebook" title="imagem que tem alguém mexendo em um notebook">
         <h1>Confira nossas ofertas imperdivéis</h1>
     </main>
 
@@ -66,11 +66,40 @@
 
     <!-- SECTION NOSSOS PRODUTOS -->
 
-    <div class="nossos-produtos">
+    <section class="nossos_produtos">
+
+    
         <div class="placa-nossas_vantagens">
             <h2>Nossos Produtos</h2>
         </div>
-    </div>
+
+    <div class="cards-container">
+       <div class="tela-card">
+        <div class="informacoes-note">
+            <div class="descricao">
+                <p>Produto</p>
+                <h3> MacBook Air 13 (M2)</h3>
+                <p>Processador: Apple M2</p>
+                <p>Memória RAM: 16GB</p>
+            </div>
+            <img class="note-macbook" src="./src/assets/images/macbook-air.png" alt="imagem MacBook Air" title="imagem MacBook Air">
+        </div>
+        <form>
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="quantidade" placeholder="1-5" min="1" max="5" required />
+
+
+            <label for="tempo_loc">Tempo de Locação</label>
+            <input type="text" name="tempo_loc" id="tempo_loc" placeholder="3 meses" required>
+
+            <p>Preço: A partir de R$ 399,99/mês </p>
+
+            <button type="submit">Alocar</button>
+
+        </form>
+       </div>
+        </div>
+    </section>
 
 
 

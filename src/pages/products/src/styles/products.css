@@ -77,7 +77,19 @@ main h1{
 
 
 /* FIM DO MAIN */
+main{
+    background-image: url(../assets/images/display-tela-main.png);
+    width: 1366px;
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 
 
 
@@ -192,6 +204,70 @@ main h1{
     flex-direction: column;
     margin-top: 243px;
 }
+.tela-card{
+    background-image:url(../assets/images/tela-card.png);
+    width: 593px;
+    height: 863px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; centraliza o conteúdo verticalmente */
+    border-radius: 20px;
 
+}
+.informacoes-note{
+ display: flex;
+ justify-content: center;
+ align-items: self-start;
+ padding: 75px 80px 47.97px 75px ;
+}
+.descricao{
+    color: var(--color-neutral-white);
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 28.29px;
+}
+.descricao p{
+    font-size: var(--footer-links2);
+    font-weight: lighter;
+}
+.descricao h3{
+    font-size: var( --paragraph-normal);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 75px 80px 101px 80px;
 
-/*  FIM DA SECTION NOSSAS VANTAGENS */
+}
+form p{
+    color: var(--color-neutral-white);
+    text-align: center;
+}
+form label{
+    color: var(--color-neutral-white);
+    margin-bottom: 16.99px;
+
+}
+form input{
+    background: none;
+    border-bottom: 1px solid var(--color-neutral-white);
+    margin-bottom: 48.19px;
+}
+form button{
+    background-color: var( --color--btn--green);
+    color: var(--color-neutral-white);
+    padding: 10px 45px;
+    font-size: var(--button-medium);
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+/*  FIM DA SECTION NOSSOS PRODUTOS */
+

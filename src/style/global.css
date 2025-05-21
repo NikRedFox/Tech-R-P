@@ -18,6 +18,7 @@ body{
     --color-neutral-white: #FFFFFF;
     --color-primary-blue: #00ADEF;
     --color-background: #111110;
+    --color--btn--green: #006771;
 
     --font: 'Inter';
     --headline1-big: 64px;
@@ -29,10 +30,12 @@ body{
     --headline2-normal: 26px;
 
     --paragraph-normal: 20px;
+    --paragraph-medium: 16px;
     --paragraph-small: 12px;
     --paragraph-tiny: 10px;
 
     --button-text: 28px;
+    --button-medium:24px;
     --button-text-small: 15px;
 
     --header-links: 24px;
