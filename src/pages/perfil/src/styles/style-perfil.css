@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/static/Inter_18pt-ExtraBold.ttf) format('truetype');
+    font-weight: extra-bold;
+    font-style: normal;
+}*/
+
 *{
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: "Inter", Arial;
 }
 
 body{
@@ -30,12 +46,70 @@ nav{
 }
 
 main{
-    margin: 0;
+    background-color: black;
+    background-image: url(../assets/imgs/Fundo-Placa.png);
+    width: 102.66%;
+    height: 1887px;
 }
 
-.background{
+/*.background{
     height: 100%;
+    display: flex;
     z-index: -1;
+    justify-content: center;
+}
+
+.background img{
+    width: 102.66%;
+}*/
+
+.row1{
+    display: flex;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 24.7px;
+}
+
+.profile{
+    display: flex;
+    background-image: url('../assets/imgs/Display1.png');
+    width: 492px;
+    height: 355.56px;
+    align-items: center;
+    gap: 76px;
+    font-size: 16px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 37px;
+    gap: 3px;
+}
+
+.user-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    font-weight: extra-bold;
+    gap: 3px;
+}
+
+.months{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 footer{
