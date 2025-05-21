@@ -393,3 +393,76 @@ header img{
 }
 /* --------------------------------------- */
 /*Incluso*/
+
+/*Parceiros*/
+.parceiros-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 266px;
+}
+
+.parceiros-chip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.parceiros-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+
+.parceiros-icon-container h2{
+    color: var(--color-neutral-white);
+    font-size: var(--headline2-big);
+}
+
+.parceiros-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    filter: invert(100%);
+}
+
+.parceiros-icon img:nth-of-type(1){
+    width: 60%;   
+    text-align: center;
+}
+
+.parceiros-icon img:nth-of-type(3){
+    padding-left: 40px;   
+}
+.parceiros-icon img:nth-of-type(5){
+    padding-left: 50px;        
+}
+
+
+
+
+/* --------------------------------------- */
+.gif-parceiros{
+    position: absolute;
+    width: 1198px;    
+    height: 366px;
+    z-index: 1000;
+}
+
+.gif-parceiros .frame{
+    position: absolute;
+    top: 17.5%; left: 0.3%;
+    width: 1198px;    
+    height: 366px;
+    object-fit: cover;
+    animation: flicker 0.2s steps(1) infinite;
+}
+
+.gif-parceiros .f2{
+    animation-delay: 0.1s;  
+}
+/* --------------------------------------- */
+/*Parceiros*/
