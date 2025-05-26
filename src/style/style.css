@@ -1,6 +1,35 @@
 @import url(./global.css);
 body{
+    position: relative;
     background-color: var(--color-background);
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    top: 11.5%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/circuit-off.svg);
+    animation: pulse 3s infinite;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        background-image: url('../assets/images/circuit-off.svg');
+    }
+    50% {
+        opacity: 0.5;
+        background-image: url('../assets/images/circuit-on.svg');
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../assets/images/circuit-off.svg');
+    }
 }
 
 /* Header */
@@ -41,7 +70,7 @@ header img{
 
 /* Main */
 .main-container{
-    display: inline-block;  
+    display: flex;  
     position: relative;  
 }
 
@@ -52,11 +81,12 @@ header img{
 }
 
 .main-container .main-tint{
+    display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     background-color: rgba(0, 0, 0, 0.75);
-    width: 100vw;
+    width: 100%;
     height: 669px;
 }
 
@@ -73,7 +103,7 @@ header img{
     left: 22%;
     color: var(--color-neutral-white);
     z-index: 1;
-    padding: 0 1rem;
+    padding: 0 ;
 }
 
 .main-text-box h1{
@@ -99,18 +129,27 @@ header img{
 
 .passos-container{
     display: flex;
-    margin-top: 75px;
-    gap: 195px;
+    margin-top: 70px;
+    gap: 155px;
+    height: 900px;
 }
 
 .chip-logo{
     position: relative;
+    margin-top: 45px;
+}
+
+.chip-logo img{
+    position: relative;
+    left: 15%;
+    /* width: 116.9%; */
+
 }
 
 .chip-logo p{
     position: absolute;
-    top: 40px;
-    left: 52px;
+    top: 35px;
+    left: 100px;
     font-size: var(--headline1-medium);
     font-weight: var(--headline1-weight);
     color: var(--color-dark-blue);
@@ -118,6 +157,8 @@ header img{
 
 .chip-left{
   position: relative;
+  height: 781px;
+  margin-left: 70px;
 }
 
 .chip-left > img:first-child{
@@ -558,7 +599,88 @@ header img{
 /*Final*/
 
 /*Footer*/
+.footer-links-container{
+    color: var(--color-neutral-white);
+    background-color: var(--color-neutral-black); 
+    display:  flex;
+    height: 490px;
+    padding: 0px 22px;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo-container img{
+    width: 25%;
+}
+
+.logo-container p:nth-of-type(2){
+    width: 535px;
+}
+
+.footer-button-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-button-box input{
+    width: 342px;
+    height: 43px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.footer-button-box button{
+    width: 89px;
+    height: 43px;
+    border-radius: 20px;
+}
+
 .footer-links-list{
     display: flex;
+    gap: 100px;  
+    margin-top: 50px;  
+    font-size: var(--footer-links2);
 }
+
+.footer-links-list ul{
+    display:  flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 50px;
+}
+
+.footer-links-list li:nth-of-type(1){
+    font-size: var(--footer-links1);
+}
+.footer-links-list a{
+    text-decoration: none;
+    color: var(--color-neutral-white);
+}
+
+.footer-footer{
+    display: flex;
+    color: var(--color-neutral-white);
+    background-color: var(--color-neutral-black); 
+    justify-content: space-between;
+    padding: 5px 22px;
+    font-size: var(--footer-links2);
+}
+
+.tos-box{
+    display: flex;
+    gap: 23px;    
+}
+
+.tos-box a{
+    text-decoration: none;
+    color: var(--color-neutral-white);
+}
+
+
 /*Footer*/
