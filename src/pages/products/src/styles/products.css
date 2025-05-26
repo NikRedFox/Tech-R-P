@@ -60,73 +60,24 @@ header img{
 
 /*  COMEÇO DO MAIN */
 
-.img-main{
-    width: 100%;
-    position: relative;
-}
-main h1{
-    width: 990px;
-    color: var(--color-neutral-white);
-    position: absolute;
-    top: 50%;
-    right:500px;
-    font-size: var(--headline1-big);
-
-}
-
-
-
-/* FIM DO MAIN */
 main{
-    background-image: url(../assets/images/display-tela-main.png);
-    width: 1366px;
-    height: 376px;
+    background: url(../assets/images/img-main\ \(1\).svg);
+    width: 100%;
+    height:716.83px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-}
-
-
-
-
-/* SECTION ALUGUE-NOTEBOOKS */
-
-.alugue-notebooks{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 125px;
-    gap: 72px;
-}
-
-.placa-titulo{
-    background-image: url(../assets/images/placa-menor\ \(2\).svg);
-    width: 1258px;
-    height: 172px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
-.placa-titulo h1{
-    padding: 58px 114px;
-    font-size:var(  --headline1-medium);
-    color: var( --color-neutral-white);
-    
+    align-items: flex-end;
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+    z-index: 1;
 }
 .placa-maior{
     background-image:url(../assets/images/tela-display.svg);
-    width: 1315px;
-    height: 662px;
+    width: 928.72px;
+    height: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,15 +86,33 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center; /* centraliza o conteúdo verticalmente */
+    gap: 29px;
+    margin: 100px 70.98px 113.61px 442px;
 
   
 }
-.placa-maior p{
+/* .placa-maior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} */
+.placa-maior h1{
+    width: 500px;   
     color: var(--color-neutral-white);
-    font-size: 40px;
-    width: 987px;
+    font-size: var( --headline1-medium);
+    text-align: center;
+   
 }
-/* FIM DA SECTION ALUGUE NOTEBOOKS */
+.placa-maior p{
+    font-size: var(  --paragraph-big);
+    width: 632px;
+    color: var(--color-neutral-white);
+    font-size: var( --button-medium);
+    text-align: center;
+}
+
+/* FIM DO MAIN */
 
 /*  COMEÇO DA SECTION NOSSAS VANTAGENS */
 .nossas-vantagens{
@@ -219,6 +188,10 @@ main{
     border-radius: 20px;
 
 }
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
 .informacoes-note{
  display: flex;
  justify-content: center;
@@ -243,12 +216,14 @@ form{
     display: flex;
     flex-direction: column;
     align-items: self-start;
-    padding: 75px 80px 101px 80px;
+    padding: 20px 80px 101px 80px;
 
 }
 form p{
+    font-size: var(   --paragraph-normal);
     color: var(--color-neutral-white);
-    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
 form label{
     color: var(--color-neutral-white);
@@ -258,7 +233,16 @@ form label{
 form input{
     background: none;
     border-bottom: 1px solid var(--color-neutral-white);
-    margin-bottom: 48.19px;
+    margin-bottom: 70px;
+    width: 100%;
+    padding: 10px 0; /* Adicione isso */
+}
+input::placeholder{
+    font-size: var(  --paragraph-normal);
+    color: var(--color-neutral-gray);
+    font-weight: lighter;
+      white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Garante que nada estoure */
 }
 form button{
     background-color: var( --color--btn--green);
