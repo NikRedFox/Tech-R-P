@@ -3,6 +3,37 @@
 body{
     margin: 0 auto;
     background-color: var(--color-background);
+    position: relative;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    top: 11.5%;
+    left: 0%;
+    width: 100%;
+    height: 100%;    
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        background-image: url('../assets/images/Circuit2-off.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        opacity: 0.5;
+        background-image: url('../assets/images/Circuit2-on.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../assets/images/Circuit2-off.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 /* Header */
@@ -247,7 +278,7 @@ main{
     font-size: var(--paragraph-big);
 }
 
-.preço{
+.preco{
     color: var(--color-neutral-white);
     font-size: var( --paragraph-normal);
     padding: 71px 0px;
@@ -264,6 +295,15 @@ main{
 
 
 /* COMEÇO DA DIV PRODUTOS VARIÁVEIS */
+
+.cards-variaveis-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px; /* espaçamento entre colunas e linhas */
+    justify-content: center; /* centraliza o grid */
+    margin: 0 auto 80px auto; /* centraliza e adiciona margin inferior */
+    width: fit-content; /* ajusta largura ao conteúdo */
+}
 .placa-menor_produtos-variaveis{
     background-image: url(../assets/images/placa-menor-nossos_produtos\ \(1\).svg);
     width: 1094px;
@@ -299,6 +339,47 @@ main{
     border-radius: 20px;
     
 }
+.informacoes-note-variaveis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 80px;
+    
+}
+.informacoes-note-variaveis img{
+    width:300px ;
+    height:188px ;
+}
+.descricao-note-variavel{
+    color: var(--color-neutral-white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start; /* <-- Adicione essa linha */
+    gap: 21px;
+
+}
+.descricao-note-variavel p{
+    font-size: var(--paragraph-medium);
+    font-weight: lighter;
+}
+.descricao-note-variavel h4{
+    font-weight: 800;
+    font-size: var(--paragraph-normal);
+}
+.preco-note-variavel{
+    color: var(--color-neutral-white);
+    font-size: var(--paragraph-normal);
+    padding: 48px 80px 51px 80px;
+}
+.btn-alocar-produto{
+    background-color: var( --color--btn--green);
+    color: var(--color-neutral-white);
+    padding: 13px 45px;
+    font-size:var(  --button-small-second);
+    border-radius: 18px;
+}
+
 
 
 
