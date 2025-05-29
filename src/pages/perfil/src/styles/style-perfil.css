@@ -50,6 +50,7 @@ nav{
 }
 
 main{
+    display: flex;
     background-color: black;
     background-image: url(../assets/imgs/Fundo-Placa.png);
     width: 100%;
@@ -68,13 +69,14 @@ main{
     width: 102.66%;
 }*/
 
-.column1{
+main .column1-main{
     display: flex;
     flex-direction: column;
     gap: 35.72px;
 }
 
-.item1{
+.item1-profile{
+    position: relative;
     padding-top: 24.7px;
     padding-left: 82px;
 }
@@ -121,15 +123,34 @@ main{
     gap: 3px;
 }
 
-.extras{
-    display: flex;
-    background-image: src('../assets/imgs/Display2.png');
-    width: 786.2px;
-    flex-direction: column;
-    gap: 10px;
+.gif-profile{
+    position: absolute;
+    width: 400px;    
+    height: 300px;
+    z-index: 1000;
+    pointer-events: none;
 }
 
-.item2{
+.gif-profile .frame{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 447px;
+    height: 294px;
+    object-fit: cover;
+    animation: flicker 0.2s steps(1) infinite;
+}
+
+.gif-profile .f2{
+    animation-delay: 0.1s;  
+}
+
+@keyframes flicker {
+    0%, 49%   { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+.item2-security{
     padding-left: 84px;
 }
 
@@ -159,11 +180,13 @@ main{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    font-size: 20px;
     gap: 15px;
 }
 
 .security .infos .content .address, .email, .phone{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -208,14 +231,189 @@ main{
     border-radius: 18px;
 }
 
-.column2{
+main .column2-main{
     display: flex;
     flex-direction: column;
-    gap: px;
+    gap: 32px;
+}
+
+.item1-options{
+    display: flex;
+    padding-top: 24.7px;
+    padding-left: 32px;
 }
 
 .options{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/imgs/Display2.png');
+    width: 734px;
+    height: 311px;
+    padding-top: 44.28px;
+    padding-left: 52px;
+    gap: 24px;
+}
 
+.options-container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 10px;
+}
+
+.options .title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.options .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.options .buttons input{
+    width: 227px;
+    height: 36px;
+    background-color: #003A41;
+    color: white;
+    font-size: 16px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.column1-options, .column2-options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options .infos{
+    display: flex;;
+    font-size: 20px;
+    gap: 70px;
+}
+
+.options .infos .item1, .item2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item2-rent{
+    padding-top: 35.72px;
+    padding-left: 109px;
+}
+
+.rent{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/imgs/Display4.png');
+    width: 391px;
+    height: 185px;
+    padding-top: 40.51px;
+    padding-left: 32.99px;
+    gap: 10px;
+}
+
+.rent .title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.rent .products{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.rent .products .product1, .product2, .product3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item3-reviews{
+    display: flex;
+    flex-direction: column;
+    padding-top: 76.92px;
+    padding-left: 96px;
+    gap: 19px;
+}
+
+.item3-reviews .title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.item3-reviews .reviews{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/imgs/Display5.png');
+    width: 487.73px;
+    height: 205.77px;
+    padding-top: 42.52px;
+    padding-left: 37.27px;
+    gap: 20px;
+}
+
+.item3-reviews .reviews .text{
+    width: 450px;
+}
+
+.item3-reviews .reviews .infos-review{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item3-reviews .reviews .product{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item3-reviews .reviews .date{
+    font-size: 14px;
+}
+
+.item3-reviews .buttons{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 21.71px;
+    gap: 82px;
+}
+
+.item4-search{
+    display: flex;
+    flex-direction: column;
+    padding-top: 54px;
+    padding-left: 76px;
+    gap: 22px;
+}
+
+.item4-search .title{
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 76px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/imgs/Display6.png');
+    width: 601.4px;
+    height: 259.25px;
+    padding-top: 54px;
+    padding-left: 54px;
+    gap: 24px;
+}
+
+.search .row1, .row2{
+    display: flex;
+    gap: 22px;
 }
 
 footer{
@@ -230,7 +428,7 @@ footer a{
     font-size: 14px;
 }
 
-.columns{
+footer .columns{
     display: flex;
     gap: 20px;
 }
