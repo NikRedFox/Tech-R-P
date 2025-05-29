@@ -8,7 +8,7 @@ body{
     position: absolute;
     z-index: -1;
     top: 11.5%;
-    left: 2%;
+    left: 0%;
     width: 100%;
     height: 80%;    
     animation: pulse 3s infinite;
@@ -17,19 +17,19 @@ body{
 @keyframes pulse {
     0% {
         opacity: 1;
-        background-image: url('../assets/images/circuit-off.svg');
+        background-image: url('../assets/images/Circuit2-off.svg');
         background-repeat: no-repeat;
         background-size: cover;
     }
     50% {
         opacity: 0.5;
-        background-image: url('../assets/images/circuit-on.svg');
+        background-image: url('../assets/images/Circuit2-on.svg');
         background-repeat: no-repeat;
         background-size: cover;
     }
     100% {
         opacity: 1;
-        background-image: url('../assets/images/circuit-off.svg');
+        background-image: url('../assets/images/Circuit2-off.svg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -127,25 +127,23 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
 }
 
 .passos-container{
     display: flex;
-    margin-top: 70px;
-    gap: 155px;
+    margin-top: 50px;
+    gap: 300px;
     height: 900px;
 }
 
 .chip-logo{
     position: relative;
+    display: flex;
     margin-top: 45px;
 }
 
 .chip-logo img{
     position: relative;
-    left: 15%;
-    /* width: 116.9%; */
 
 }
 
@@ -241,6 +239,8 @@ header img{
 }
 
 .right-text button{
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     width: 270px;
     height: 56px;
@@ -318,6 +318,7 @@ header img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
     
 }
 
@@ -401,7 +402,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 266px;
+    margin-top: 200px;
     
 }
 
@@ -482,7 +483,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 266px;
+    margin-top: 200px;
 }
 
 .parceiros-chip{
@@ -555,7 +556,7 @@ header img{
 .final-container{
     display: flex;
     flex-direction: column;
-    margin-top: 355px;
+    margin-top: 200px;
 }
 
 .final-chip{
