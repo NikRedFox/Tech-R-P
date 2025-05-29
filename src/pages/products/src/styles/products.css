@@ -135,6 +135,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center; /* centraliza o conteúdo verticalmente */
+    margin: 0 auto;
+    margin-top: 199px;
 
 }
 .placa-nossas_vantagens h2{
@@ -153,6 +155,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center; /* centraliza o conteúdo verticalmente */
+  
 
 }
 .display-tela-vantagens p{
@@ -173,8 +176,31 @@ main{
     flex-direction: column;
     margin-top: 243px;
 }
+.placa-menor_nossos_produtos{
+    background-image: url(../assets/images/placa-menor-nossos_produtos.svg);
+    width: 1094px;
+    height: 138.65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 258px 273px 224.35px 73px;
+
+}
+.placa-menor_nossos_produtos h3{
+    color: var(--color-neutral-white);
+    font-size: var( --headline1-medium);
+    padding: 36px 0px 36px 100px;
+
+}
+/* COMEÇO DO CARROSSEL */
+
 .tela-card{
-    background-image:url(../assets/images/tela-card.png);
+    background-image:url(../assets/images/tela-card.svg);
     width: 593px;
     height: 863px;
     background-repeat: no-repeat;
@@ -191,67 +217,90 @@ main{
 .cards-container{
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 .informacoes-note{
  display: flex;
- justify-content: center;
- align-items: self-start;
+ flex-direction: column;
+ align-items:center;
  padding: 75px 80px 47.97px 75px ;
+}
+.informacoes-note img{
+    width: 351px;
+    height: 216px;
+    margin: 0 auto;
 }
 .descricao{
     color: var(--color-neutral-white);
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-items: flex-start;
+    align-self: flex-start; /* <-- Adicione essa linha */
     gap: 28.29px;
+    padding: 39px 25px 0px 25px;
 }
 .descricao p{
-    font-size: var(--footer-links2);
+    font-size: var(--paragraph-normal);
     font-weight: lighter;
 }
 .descricao h3{
-    font-size: var( --paragraph-normal);
+    font-size: var(--paragraph-big);
 }
-form{
+
+.preço{
+    color: var(--color-neutral-white);
+    font-size: var( --paragraph-normal);
+    padding: 71px 0px;
+}
+.btn-alocar{
+    background-color: var(  --color--btn--green);
+    color: var(--color-neutral-white);
+    font-size: var(   --button-text);
+    padding: 8px 50px;
+    border-radius: 18px;
+
+}
+/* FIM DO CARROSSEL */
+
+
+/* COMEÇO DA DIV PRODUTOS VARIÁVEIS */
+.placa-menor_produtos-variaveis{
+    background-image: url(../assets/images/placa-menor-nossos_produtos\ \(1\).svg);
+    width: 1094px;
+    height: 138.65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
-    padding: 20px 80px 101px 80px;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 296px 77px 197.35px 163px;
 
 }
-form p{
-    font-size: var(   --paragraph-normal);
+.placa-menor_produtos-variaveis h3{
     color: var(--color-neutral-white);
-    margin: 0 auto;
-    margin-bottom: 54px;
-}
-form label{
-    color: var(--color-neutral-white);
-    margin-bottom: 16.99px;
+    font-size: var( --headline1-medium);
+    padding: 41px 91px ;
 
 }
-form input{
-    background: none;
-    border-bottom: 1px solid var(--color-neutral-white);
-    margin-bottom: 70px;
-    width: 100%;
-    padding: 10px 0; /* Adicione isso */
+
+.tela-produto-variavel{
+    background-image: url(../assets/images/tela-produ-variavel.svg);
+    width: 644px;
+    height: 645px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    
 }
-input::placeholder{
-    font-size: var(  --paragraph-normal);
-    color: var(--color-neutral-gray);
-    font-weight: lighter;
-      white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Garante que nada estoure */
-}
-form button{
-    background-color: var( --color--btn--green);
-    color: var(--color-neutral-white);
-    padding: 10px 45px;
-    font-size: var(--button-medium);
-    border-radius: 18px;
-    margin: 0 auto;
-}
+
+
 
 /*  FIM DA SECTION NOSSOS PRODUTOS */
 
