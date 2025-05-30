@@ -4,6 +4,8 @@ body{
     margin: 0 auto;
     background-color: var(--color-background);
     position: relative;
+    
+    
 }
 .background{
     position: absolute;
@@ -12,6 +14,20 @@ body{
     left: 0%;
     width: 100%;
     height: 100%;    
+    animation: pulse 3s infinite;
+}
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
     animation: pulse 3s infinite;
 }
 
@@ -94,7 +110,7 @@ header img{
 main{
     background: url(../assets/images/img-main\ \(1\).svg);
     width: 100%;
-    height:716.83px;
+   height:1000px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -230,8 +246,47 @@ main{
 }
 /* COMEÇO DO CARROSSEL */
 
-.tela-card{
-    background-image:url(../assets/images/tela-card.svg);
+.carrossel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  /* BOTÕES DE NAVEGAÇÃO */
+  .carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carrossel-btn.left {
+    left: 10px;
+  }
+  
+  .carrossel-btn.right {
+    right: 10px;
+  }
+  
+  /* CONTAINER DOS CARDS */
+  .cards-container {
+    display: flex;
+    gap: 50px;
+    transition: transform 0.5s ease;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+  }
+  
+  /* SEUS ESTILOS EXISTENTES */
+  .tela-card {
+    background-image: url(../assets/images/tela-card.svg);
     width: 593px;
     height: 863px;
     background-repeat: no-repeat;
@@ -240,57 +295,55 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; centraliza o conteúdo verticalmente */
     border-radius: 20px;
-
-}
-.cards-container{
+  }
+  
+  .informacoes-note {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.informacoes-note{
- display: flex;
- flex-direction: column;
- align-items:center;
- padding: 75px 80px 47.97px 75px ;
-}
-.informacoes-note img{
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 80px 47.97px 75px;
+  }
+  
+  .informacoes-note img {
     width: 351px;
     height: 216px;
     margin: 0 auto;
-}
-.descricao{
+  }
+  
+  .descricao {
     color: var(--color-neutral-white);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    align-self: flex-start; /* <-- Adicione essa linha */
+    align-self: flex-start;
     gap: 28.29px;
     padding: 39px 25px 0px 25px;
-}
-.descricao p{
+  }
+  
+  .descricao p {
     font-size: var(--paragraph-normal);
     font-weight: lighter;
-}
-.descricao h3{
+  }
+  
+  .descricao h3 {
     font-size: var(--paragraph-big);
-}
-
-.preco{
+  }
+  
+  .preco {
     color: var(--color-neutral-white);
-    font-size: var( --paragraph-normal);
+    font-size: var(--paragraph-normal);
     padding: 71px 0px;
-}
-.btn-alocar{
-    background-color: var(  --color--btn--green);
+  }
+  
+  .btn-alocar {
+    background-color: var(--color--btn--green);
     color: var(--color-neutral-white);
-    font-size: var(   --button-text);
+    font-size: var(--button-text);
     padding: 8px 50px;
     border-radius: 18px;
+  }
 
-}
 /* FIM DO CARROSSEL */
 
 
@@ -316,7 +369,7 @@ main{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin: 296px 77px 197.35px 163px;
+    margin:300px 0px 105px 600px;
 
 }
 .placa-menor_produtos-variaveis h3{

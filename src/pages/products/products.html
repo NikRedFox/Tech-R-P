@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos</title>
     <link rel="stylesheet" href="./src/styles/products.css" />
+    <script src="./src/js/script.js" defer></script>
   </head>
   <body>
     <div class="background"></div>
@@ -89,87 +90,74 @@
         <h3>Mais Alocados</h3>
       </div>
 
-      <div class="cards-container">
-        <!-- INICIO DO CARD I5 ACER ASPIRE -->
-        <div class="tela-card">
-          <div class="informacoes-note">
-            <img
-              class="note-i5-acer"
-              src="./src/assets/images/img-i5-acer.svg"
-              alt="imagem do note i5 acer aspire"
-              title="imagem i5 acer aspire"
-            />
-            <div class="descricao">
-              <p>Produto</p>
-              <h3>I5 Acer Aspire 5h</h3>
-              <p>Processador:Intel Core i5</p>
-              <p>Memória RAM: 8GB/ 512gb SSD</p>
-            </div>
-            <p class="preco">Preço: A partir de R$ 150,00/mês</p>
-            <button class="btn-alocar">Alocar</button>
-          </div>
-        </div>
-        <!-- FIM DO CARD I5 ACER ASPIRE -->
+      <!-- ENVOLVENDO TUDO COM O WRAPPER -->
+<div class="carrossel-wrapper">
+  <button class="carrossel-btn left">&#10094;</button>
 
-        <!-- INICIO DO CARD LENOVO IDEAPAD -->
-        <div class="tela-card">
-          <div class="informacoes-note">
-            <img
-              class="note-i5-acer"
-              src="./src/assets/images/img-lenovo-ideapad.svg"
-              alt="imagem do note LenovoIdeapad"
-              title="imagem do note LenovoIdeapad"
-            />
-            <div class="descricao">
-              <p>Produto</p>
-              <h3>Lenovo IdeaPad</h3>
-              <p>Processador: Intel Celeron</p>
-              <p>Memória RAM: 8gb/ 512gb SSD</p>
-            </div>
-            <p class="preco">Preço: A partir de R$ 150,00/mês</p>
-            <button class="btn-alocar">Alocar</button>
-          </div>
+  <div class="cards-container">
+    <!-- CARD I5 ACER ASPIRE -->
+    <div class="tela-card">
+      <div class="informacoes-note">
+        <img class="note-i5-acer" src="./src/assets/images/img-i5-acer.svg" alt="imagem do note i5 acer aspire" title="imagem i5 acer aspire" />
+        <div class="descricao">
+          <p>Produto</p>
+          <h3>I5 Acer Aspire 5h</h3>
+          <p>Processador:Intel Core i5</p>
+          <p>Memória RAM: 8GB/ 512gb SSD</p>
         </div>
-        <!-- FIM DO CARD LENOVO IDEAPAD -->
-
-        <div class="tela-card">
-          <div class="informacoes-note">
-            <img
-              class="note-i5-acer"
-              src="./src/assets/images/img-acer-nitro-v15.svg"
-              alt="imagem do note i5 acer aspire"
-              title="imagem i5 acer aspire"
-            />
-            <div class="descricao">
-              <p>Produto</p>
-              <h3>Acer Nitro V15 I5</h3>
-              <p>Processador:Intel Core i5</p>
-              <p>Memória RAM: 8GB/ 500gb SSD</p>
-            </div>
-            <p class="preco">Preço: A partir de R$ 220,00/mês</p>
-            <button class="btn-alocar">Alocar</button>
-          </div>
-        </div>
-
-        <div class="tela-card">
-          <div class="informacoes-note">
-            <img
-              class="note-i5-acer"
-              src="./src/assets/images/img-aourus-15.svg"
-              alt="imagem do note aourus 15"
-              title="imagem do note aourus 15"
-            />
-            <div class="descricao-note-variavel">
-              <p>Produto</p>
-              <h4>Aorus 15 i5h</h4>
-              <p>Processador:Intel Core i5</p>
-              <p>Memória RAM: 8GB/ 500gb SSD</p>
-            </div>
-            <p class="preco">Preço: A partir de R$ 300,00/mês</p>
-            <button class="btn-alocar">Alocar</button>
-          </div>
-        </div>
+        <p class="preco">Preço: A partir de R$ 150,00/mês</p>
+        <button class="btn-alocar">Alocar</button>
       </div>
+    </div>
+
+    <!-- CARD LENOVO IDEAPAD -->
+    <div class="tela-card">
+      <div class="informacoes-note">
+        <img class="note-i5-acer" src="./src/assets/images/img-lenovo-ideapad.svg" alt="imagem do note LenovoIdeapad" title="imagem do note LenovoIdeapad" />
+        <div class="descricao">
+          <p>Produto</p>
+          <h3>Lenovo IdeaPad</h3>
+          <p>Processador: Intel Celeron</p>
+          <p>Memória RAM: 8gb/ 512gb SSD</p>
+        </div>
+        <p class="preco">Preço: A partir de R$ 150,00/mês</p>
+        <button class="btn-alocar">Alocar</button>
+      </div>
+    </div>
+
+    <!-- CARD ACER NITRO -->
+    <div class="tela-card">
+      <div class="informacoes-note">
+        <img class="note-i5-acer" src="./src/assets/images/img-acer-nitro-v15.svg" alt="imagem do note acer nitro v15" title="imagem acer nitro v15" />
+        <div class="descricao">
+          <p>Produto</p>
+          <h3>Acer Nitro V15 I5</h3>
+          <p>Processador:Intel Core i5</p>
+          <p>Memória RAM: 8GB/ 500gb SSD</p>
+        </div>
+        <p class="preco">Preço: A partir de R$ 220,00/mês</p>
+        <button class="btn-alocar">Alocar</button>
+      </div>
+    </div>
+
+    <!-- CARD AORUS 15 -->
+    <div class="tela-card">
+      <div class="informacoes-note">
+        <img class="note-i5-acer" src="./src/assets/images/img-aourus-15.svg" alt="imagem do note aourus 15" title="imagem do note aourus 15" />
+        <div class="descricao-note-variavel">
+          <p>Produto</p>
+          <h4>Aorus 15 i5h</h4>
+          <p>Processador:Intel Core i5</p>
+          <p>Memória RAM: 8GB/ 500gb SSD</p>
+        </div>
+        <p class="preco">Preço: A partir de R$ 300,00/mês</p>
+        <button class="btn-alocar">Alocar</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="carrossel-btn right">&#10095;</button>
+</div>
 
       <!-- DIV PRODUTOS VARIÁVEIS -->
 
