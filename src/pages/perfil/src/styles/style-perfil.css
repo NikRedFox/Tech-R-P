@@ -1,41 +1,21 @@
-@font-face {
-    font-family: "Inter";
-    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* @import url(../../../../style/global.css); */
-
-/*@font-face {
-    font-family: "Inter";
-    src: url(../fonts/Inter/static/Inter_18pt-ExtraBold.ttf) format('truetype');
-    font-weight: extra-bold;
-    font-style: normal;
-}*/
-
-*{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Inter", Arial;
-}
-/* nn vai precisar */
+@import url(../../../../style/global.css);
 
 a{
     text-decoration: none;
+    color: var(--color-neutral-white);
 }
 
 body{
     position: relative;
     overflow-x: hidden;
-    background-color: black;
+    background-color: var(--color-neutral-black);
+    color: var(--color-neutral-white);
 }
 
 .background{
     position: absolute;
     z-index: -1;
-    top: 11.5%;
+    top: 3%;
     left: 0%;
     width: 100%;
     height: 80%;    
@@ -64,13 +44,12 @@ body{
 }
 
 header, footer{
-    background-color: black;
-    color: white;
-    /* color: var(--color-neutral-white) */
+    background-color: var(--color-neutral-black);
+    color: var(--color-neutral-white);
 }
 
 nav{
-    font-size: 24px;
+    font-size: var(--header-links);
     font-weight: bold;
     width: 100%;
     display: flex;
@@ -81,7 +60,7 @@ nav{
 /* font-size: var( --headline1-big) */
 
 .contato{
-    color: #00ADEF;
+    color: var(--color-primary-blue);
     display: flex;
     align-items: center;
     gap: 3px;
@@ -124,7 +103,7 @@ main .column1-main{
 }
 
 .user-name{
-    font-size: 22px;
+    font-size: var(--header-links);
     font-weight: bold;
 }
 
@@ -196,7 +175,7 @@ main .column1-main{
 }
 
 .security .infos .title{
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
 }
 
@@ -204,7 +183,7 @@ main .column1-main{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: var(--paragraph-normal);
     gap: 15px;
 }
 
@@ -231,7 +210,7 @@ main .column1-main{
 .verification .title{
     display: flex;
     justify-content: center;
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
 }
 
@@ -251,7 +230,7 @@ main .column1-main{
     height: 36px;
     background-color: #003A41;
     color: white;
-    font-size: 16px;
+    font-size: var(--footer-links1);
     border-radius: 18px;
 }
 
@@ -298,8 +277,8 @@ main .column2-main{
     display: flex;
     flex-direction: column;
     background-image: url('../assets/imgs/Display2.png');
-    width: 734px;
-    height: 311px;
+    width: 786.2px;
+    height: 355.56px;
     padding-top: 44.28px;
     padding-left: 52px;
     gap: 24px;
@@ -313,7 +292,7 @@ main .column2-main{
 }
 
 .options .title{
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
 }
 
@@ -327,7 +306,7 @@ main .column2-main{
     height: 36px;
     background-color: #003A41;
     color: white;
-    font-size: 16px;
+    font-size: var(--footer-links1);
     border-radius: 18px;
     font-weight: bold;
 }
@@ -340,8 +319,8 @@ main .column2-main{
 
 .options .infos{
     display: flex;;
-    font-size: 20px;
-    gap: 70px;
+    font-size: var(--paragraph-normal);
+    gap: 35px;
 }
 
 .options .infos .column1-infos, .column2-infos{
@@ -386,15 +365,15 @@ main .column2-main{
     display: flex;
     flex-direction: column;
     background-image: url('../assets/imgs/Display4.png');
-    width: 391px;
-    height: 185px;
+    width: 424.1px;
+    height: 226.08px;
     padding-top: 40.51px;
     padding-left: 32.99px;
     gap: 10px;
 }
 
 .rent .title{
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
 }
 
@@ -402,7 +381,7 @@ main .column2-main{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: var(--paragraph-normal);
     gap: 15px;
 }
 
@@ -448,7 +427,7 @@ main .column2-main{
 }
 
 .item3-reviews .title{
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
 }
 
@@ -456,8 +435,8 @@ main .column2-main{
     display: flex;
     flex-direction: column;
     background-image: url('../assets/imgs/Display5.png');
-    width: 487.73px;
-    height: 205.77px;
+    width: 525px;
+    height: 248.29px;
     padding-top: 42.52px;
     padding-left: 37.27px;
     gap: 20px;
@@ -474,18 +453,18 @@ main .column2-main{
 }
 
 .item3-reviews .reviews .product{
-    font-size: 24px;
+    font-size: var(--header-links);
     font-weight: bold;
 }
 
 .item3-reviews .reviews .date{
-    font-size: 14px;
+    font-size: var(--footer-links2);
 }
 
 .item3-reviews .buttons{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: var(--paragraph-normal);
     text-decoration: underline;
     padding-top: 21.71px;
     gap: 82px;
@@ -527,7 +506,7 @@ main .column2-main{
 }
 
 .item4-search .title{
-    font-size: 28px;
+    font-size: var(--button-text);
     font-weight: bold;
     padding-left: 76px;
 }
@@ -536,8 +515,8 @@ main .column2-main{
     display: flex;
     flex-direction: column;
     background-image: url('../assets/imgs/Display6.png');
-    width: 601.4px;
-    height: 259.25px;
+    width: 655.4px;
+    height: 313.25px;
     padding-top: 54px;
     padding-left: 54px;
     gap: 24px;
@@ -577,14 +556,14 @@ main .column2-main{
 
 footer{
     width: 100%;
-    font-size: 16px;
+    font-size: var(--footer-links1);
     flex-direction: column;
     padding-left: 21px;
     padding-bottom: 13.8px;
 }
 
 footer a{
-    font-size: 14px;
+    font-size: var(--footer-links2);
 }
 
 footer .columns{
@@ -600,7 +579,7 @@ footer .column1 input, button{
     color: black;
     background-color: white;
     border: none;
-    font-size: 16px;
+    font-size: var(--footer-links1);
     font-weight: bold;
     border-radius: 20px;
 }
@@ -628,7 +607,7 @@ footer .column2, .column3, .column4{
 }
 
 footer .title{
-    font-size: 18px;
+    font-size: var(--paragraph-normal);
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -650,7 +629,7 @@ footer .content{
 .copy{
     width: 100%;
     gap: 25px;
-    font-size: 14px;
+    font-size: var(--footer-links2);
     display: flex;
     align-items: center;
     justify-content: space-between;
