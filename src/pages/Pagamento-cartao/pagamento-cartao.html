@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="../../../src/assets/images/Logo-TechRP.svg" alt="">
+        <img src="./src/assets/images/Logo-TechRP.svg" alt="">
     
         <div class="header-container">
             <nav class="header-links">
@@ -37,7 +37,56 @@
     </header>
 
     <main>
+        <h1>Informações do cartão</h1>
+        <form action="" method="post" class="form-input">
+            <div class="input-cartao">
+                <label for="">Número do cartão</label>
+                <div class="input-container">
+                    <input type="text" name="numeroCartao">
+                    <img src="./src/assets/images/creditcard-icon.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="input-validade">
+                <label for="">Data de validade</label>
+                <div class="data-box">
+                    <input type="text" name="validadeMes">
+                    <input type="text" name="validadeAno">
+                </div>
+            </div>
 
+            <div class="input-seguranca">
+                <label for="">Código de segurança</label>
+                <input type="text" name="codigoSeguranca">            
+            </div>
+        </form>
+
+        <form action="" method="post" class="form-search">
+            <div class="linha">
+                <p>Subtotal: </p> 
+                <p></p>  
+            </div>
+
+             <div class="linha">
+                <p>Taxa de  Envio: </p> 
+                <p></p>  
+            </div>
+
+            <div class="linha">
+                <p>Desconto: </p> 
+                <p></p>  
+            </div>
+            
+            <div class="barra"></div>
+            
+            <div class="linha">
+                <p>Total Geral: </p> 
+                <p></p>  
+            </div>
+            <button>Efetuar Pagamento</button>
+        </form>
+           
+        
     </main>
 
     <footer>
