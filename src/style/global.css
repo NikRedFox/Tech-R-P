@@ -18,6 +18,7 @@ body{
     --color-neutral-white: #FFFFFF;
     --color-primary-blue: #00ADEF;
     --color-background: #111110;
+    --color-transparent-black: rgba(00, 00, 00, 0.75);
 
     --font: 'Inter';
     --headline1-big: 64px;
