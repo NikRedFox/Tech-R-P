@@ -1,35 +1,41 @@
 @import url(../../../../style/global.css);
 
 body{
-    margin: 0 auto;
-    background-color: var(--color-background);
     position: relative;
-    
-    
+    background-color: var(--color-background);
 }
+
 .background{
     position: absolute;
     z-index: -1;
     top: 11.5%;
     left: 0%;
     width: 100%;
-    height: 100%;    
+    height: 88%;    
     animation: pulse 3s infinite;
-}
-html {
-    height: 100%;
-    margin: 0;
 }
 
-.background {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    animation: pulse 3s infinite;
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        background-image: url('../assets/images/Circuit2-off.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        opacity: 0.5;
+        background-image: url('../assets/images/Circuit2-on.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../assets/images/Circuit2-off.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
+
 
 @keyframes pulse {
     0% {
@@ -393,23 +399,44 @@ main{
     
 }
 .informacoes-note-variaveis{
+    z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 60px 80px;
     
+    
+}
+.informacoes-note-variaveis:before{
+    content: '';
+    background: rgba(255, 255,255, 0.1);
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+   
 }
 .informacoes-note-variaveis img{
-    width:300px ;
+    z-index: 2;
+    position: relative;
+    max-width:300px ;
     height:188px ;
+    margin-top: 30px;
 }
 .descricao-note-variavel{
+    position: relative;
+    z-index: 2;
     color: var(--color-neutral-white);
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start; /* <-- Adicione essa linha */
-    gap: 21px;
+    gap: 10px;
 
 }
 .descricao-note-variavel p{
@@ -421,16 +448,19 @@ main{
     font-size: var(--paragraph-normal);
 }
 .preco-note-variavel{
+    position: relative;
     color: var(--color-neutral-white);
     font-size: var(--paragraph-normal);
     padding: 48px 80px 51px 80px;
 }
 .btn-alocar-produto{
+    position: relative;
     background-color: var( --color--btn--green);
     color: var(--color-neutral-white);
     padding: 13px 45px;
     font-size:var(  --button-small-second);
     border-radius: 18px;
+    cursor: pointer;
 }
 /* FIM ARTICLE PRODUTOS VARIAVEIS */
 
@@ -522,3 +552,110 @@ main{
 
 /* FIM FOOTER */
 
+/* POP-UP OVERLAY */
+/* .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+   */
+
+   .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+#popupForm{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 60px 20px 70px 20px;
+  
+
+}
+
+#popupForm p{
+  font-size: var(   --paragraph-normal);
+  color: var(--color-neutral-white);
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+#popupForm label{
+  color: var(--color-neutral-black);
+  margin-bottom: 16.99px;
+
+}
+#popupForm input{
+  background: none;
+  border-bottom: 1px solid var(--color-neutral-black);
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px 0; /* Adicione isso */
+}
+#popupForm::placeholder{
+  font-size: var(  --paragraph-normal);
+  color: var(--color-neutral-gray);
+  font-weight: lighter;
+    white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Garante que nada estoure */
+}
+#popupForm button{
+  background-color: var( --color--btn--green);
+  color: var(--color-neutral-white);
+  padding: 10px 45px;
+  font-size: var(--button-medium);
+  border-radius: 18px;
+  margin: 0 auto;
+}

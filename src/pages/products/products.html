@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos</title>
     <link rel="stylesheet" href="./src/styles/products.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
     <script src="./src/js/script.js" defer></script>
+
   </head>
   <body>
     <div class="background"></div>
@@ -409,7 +411,38 @@
     </footer>
 
     <!-- FIM FOOTER -->
+    <!-- <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <img id="popupImage" src="" alt="Imagem do notebook" style="max-width: 100%; height: auto;" />
+        <h2 id="popupTitle"></h2>
+        <p id="popupSpecs"></p>
+        <p id="popupPrice"></p>
+        <button class="confirmar-btn">Confirmar Alocação</button>
+      </div>
+    </div> -->
 
+   <!-- Popup Overlay -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <img id="popupImage" src="" alt="Imagem do notebook" style="max-width: 100%; height: auto;" />
+    <h2 id="popupTitle"></h2>
+
+    <form id="popupForm">
+      <label for="quantidade">Quantidade</label>
+      <input type="number" name="quantidade" id="quantidade" placeholder="1-5" min="1" max="5" required />
+      
+      <label for="tempo_loc">Tempo de Locação</label>
+      <input type="text" name="tempo_loc" id="tempo_loc" placeholder="3 meses" required>
+
+      <p id="popupPrice">Preço: A partir de R$ 150,00/mês</p>
+
+      <button type="submit" class="confirmar-btn">Confirmar Alocação</button>
+    </form>
+  </div>
+</div>
+    
     
   </body>
 </html>
