@@ -15,10 +15,11 @@ body{
 .background{
     position: absolute;
     background-image: url(../assets/imgs/background.png);
+    background-repeat: repeat; /* Faz a imagem se repetir */
+    background-size: auto;
     z-index: -1;
     width: 100%;
-    height: 80%;    
-    animation: pulse 3s infinite;
+    height: 80%;
 }
 
 header, footer{
@@ -48,6 +49,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 55px;
+    padding-bottom: 45px;
+    gap: 60px;
 }
 
 main .title{
@@ -75,10 +79,47 @@ form{
     background-color: var(--color-transparent-black);
     font-size: var(--header-links);
     color: var(--color-neutral-white);
+    padding-left: 10px;
+    border-bottom: 1px solid var(--color-neutral-white);
+    box-shadow: 0px 0px 15px var(--color-dark-blue);
 }
 
 .subject{
     width: 338px;
+}
+
+form > input, form > textarea{
+    width: 100%;
+    height: 78px;
+    background-color: var(--color-transparent-black);
+    font-size: var(--header-links);
+    color: var(--color-neutral-white);
+    padding-left: 10px;
+    border-bottom: 1px solid var(--color-neutral-white);
+    box-shadow: 0px 0px 15px var(--color-dark-blue);
+}
+
+form > textarea{
+    height: 146px;
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+    height: 91px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    width: 264px;
+    height: 91px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-button-blue);
+    color: var(--color-neutral-white);
+    font-size: var(--header-links);
+    border-radius: 37px;
 }
 
 footer{
@@ -100,6 +141,7 @@ footer .columns{
 
 footer .column1{
     width: 40%;
+    gap: 45px;
 }
 
 footer .column1 input, button{

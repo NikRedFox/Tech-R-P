@@ -20,7 +20,6 @@ body{
     --color-dark-blue: #0FA3B1;
     --color-button-blue: #006771;
     --color-background: #111110;
-    --color-transparent-black: rgba(00, 00, 00, 0.75);
     --color-background-transparency: rgba(17, 17, 16, 0.95);
 
     --font: 'Inter';
@@ -32,7 +31,7 @@ body{
     --headline2-medium: 33px;
     --headline2-normal: 26px;
 
-    --paragraph-big: 24px;
+    --paragraph-big:24px;
     --paragraph-normal: 20px;
     --paragraph-medium: 16px;
     --paragraph-small: 12px;
