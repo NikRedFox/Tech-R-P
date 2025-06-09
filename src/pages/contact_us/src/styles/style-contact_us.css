@@ -134,6 +134,11 @@ footer a{
     font-size: var(--footer-links2);
 }
 
+footer > img{
+    width: 131px;
+    padding-top: 12px;
+}
+
 footer .columns{
     display: flex;
     gap: 20px;
