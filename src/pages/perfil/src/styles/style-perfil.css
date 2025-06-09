@@ -66,6 +66,10 @@ nav{
     gap: 3px;
 }
 
+.contato a{
+    color: var(--color-primary-blue);
+}
+
 main{
     display: flex;
     /*background-image: url(../assets/imgs/Fundo-Placa.png);*/
@@ -228,8 +232,8 @@ main .column1-main{
 .verification .button input{
     width: 100px;
     height: 36px;
-    background-color: #003A41;
-    color: white;
+    background-color: var(--color-button-blue);
+    color: var(--color-neutral-white);
     font-size: var(--footer-links1);
     border-radius: 18px;
 }
@@ -304,8 +308,8 @@ main .column2-main{
 .options .buttons input{
     width: 227px;
     height: 36px;
-    background-color: #003A41;
-    color: white;
+    background-color: var(--color-button-blue);
+    color: var(--color-neutral-white);
     font-size: var(--footer-links1);
     border-radius: 18px;
     font-weight: bold;
@@ -582,8 +586,8 @@ footer .column1{
 }
 
 footer .column1 input, button{
-    color: black;
-    background-color: white;
+    color: var(--color-neutral-black);
+    background-color: var(--color-neutral-white);
     border: none;
     font-size: var(--footer-links1);
     font-weight: bold;
