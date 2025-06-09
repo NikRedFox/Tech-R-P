@@ -566,6 +566,11 @@ footer a{
     font-size: var(--footer-links2);
 }
 
+footer > img{
+    width: 131px;
+    padding-top: 12px;
+}
+
 footer .columns{
     display: flex;
     gap: 20px;
@@ -573,6 +578,7 @@ footer .columns{
 
 footer .column1{
     width: 40%;
+    gap: 45px;
 }
 
 footer .column1 input, button{
