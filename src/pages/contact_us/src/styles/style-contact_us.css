@@ -45,6 +45,10 @@ nav{
     gap: 3px;
 }
 
+.contato a{
+    color: var(--color-primary-blue);
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -150,8 +154,8 @@ footer .column1{
 }
 
 footer .column1 input, button{
-    color: black;
-    background-color: white;
+    color: var(--color-neutral-black);
+    background-color: var(--color-neutral-white);
     border: none;
     font-size: var(--footer-links1);
     font-weight: bold;
